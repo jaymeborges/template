@@ -1,32 +1,19 @@
 import React, { Component } from 'react'
-import axios from 'axios'
 import Main from '../template/Main'
 
 const headerProps = {
-    icon: 'users',
-    title: 'Album de Fotos'
+   icon: 'fa fa-camera',
+   title: "Album de fotos",
 }
 
-const baseUrl = 'http://localhost:3001/users'
-const initialState = {
-  
-}
-
-export default class  extends Component {
-
-    state = { ...initialState }
-
-    componentWillMount() {
-        axios(baseUrl).then(resp => {
-            this.setState({ list: resp.data })
-        })
-    }
-  
+export default class Album extends Component{
     render() {
-        return (
+         return (
             <Main {...headerProps}>
-            
+                
+ 
             </Main>
         )
-    }
+    }  
 }
+
