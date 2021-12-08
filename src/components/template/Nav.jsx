@@ -9,7 +9,7 @@ export default props =>
                 <i className="fa fa-home"></i> Início
             </Link>
             <Link to="/users">
-                <i className="fa fa-camera"></i> Fotos
+                <i className="fa fa-camera"></i> Álbum de fotos
             </Link>
         </nav>
     </aside>
